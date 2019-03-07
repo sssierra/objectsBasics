@@ -36,14 +36,18 @@ console.log("" + student.name + " is " + student.age + " years old and likes to 
   house.stories = 1;
   house.color = "white";
   house.size = "1000 sq feet";
-  house.buy = "Hell Yeah!";
+  house.buy = function()
+                {
+                    return "Hell Yeah!";
+                };
 
 /*
     5.  Complete the following:
             - Console.log the object.
             - Invoke the method set for the property 'buy'.
 */
-console.log(house.buy);
+console.log(house);
+console.log(house.buy());
   /* 
     6. Declare a variable named `birthdayGift` and set its value to be an EMPTY object.
      Next, you will add three properties to this object. 
@@ -51,11 +55,17 @@ console.log(house.buy);
               - add a property named `size` and set it to a number value between `0` and `20`.
               - add a property named `contents` and set it to be an empty array.
   */
-  
+  var birthdayGift = {};
+
+ birthdayGift.bagOrBox = "bag";
+ birthdayGift.size = 10;
+ birthdayGift.contents = [];
   /*
      7. Add 3 elements to your birthdayGift contents property
  */
- 
+    birthdayGift.contents[0] = "socks";
+    birthdayGift.contents[1] = "money";
+    birthdayGift.contents[2] = "candy";
  /*
      8. Declare a variable named `bestMusicAlbum` and create the following properties (key-value pairs) to the object:
               - add a key named `artist` and set its value to the name of an artist of your choice.
@@ -64,8 +74,17 @@ console.log(house.buy);
               - add a key named `user` and set it to be `null`.
               - add a key named `songs` and set it to be an empty array.
   */
-  
-     /* 9. Add 3 elements to your birthdayGift contents property
-     */
+  var bestMusicAlbum = {
+                        artist: "Stone Temple Pilots", 
+                        year: 1992, 
+                        albumCover: "red", 
+                        user: 'null', 
+                        songs: []
+                       };
+     /* 9. Add 3 elements to your bestMusicAlbum contents property*/
+
+bestMusicAlbum.songs[0] = "Piece of Pie";
+bestMusicAlbum.songs[1] = "Crackerman";
+bestMusicAlbum.songs[2] = "Sin";
   //building & defining key pairs inside of the object, use a colon (:), inside of the { }
   //assigning & modifying require equal signs (=)
